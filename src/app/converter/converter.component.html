@@ -4,6 +4,7 @@
     <input
       class="converter__amount"
       type="number"
+      min="0"
       placeholder={{from}}
       [(ngModel)]="amountFrom"
       (input)="convertFrom()"
@@ -29,6 +30,7 @@
     <input
       class="converter__amount"
       type="number"
+      min="0"
       placeholder={{to}}
       [(ngModel)]="amountTo"
       (input)="convertTo()"
