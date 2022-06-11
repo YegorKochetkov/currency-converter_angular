@@ -1,27 +1,25 @@
 # CurrencyConverter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+[DEMO LINK](https://yegorkochetkov.github.io/angular_currency-converter_task/)
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Header with exchange rate
+The header should display the current exchange rate (USD, EUR) against the hryvnia (UAH)
+The current exchange rate must come from any public API
 
-## Code scaffolding
+### Component with conversion
+- One currency must have its own input and select.
+- a separate input + select for the first currency, and a separate input + select for the second currency
+- input is given a number to indicate the number of units to convert
+- select must contain at least three currencies - UAH, USD, EUR.
+- conversion must occur in both directions
+- when changing the value in the first currency, the value in the second must be recalculated, and vice versa
+- when changing the currency in each select, the conversion of both currencies should be recalculated correctly
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The advantage will be:
+Well thought out interface and appearance
+Clean code
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### To implement use
+Angular 2+
