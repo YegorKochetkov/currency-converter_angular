@@ -1,6 +1,6 @@
 # CurrencyConverter
 
-[DEMO LINK](https://yegorkochetkov.github.io/angular_currency-converter_task/)
+[DEMO LINK](https://yegorkochetkov.github.io/currency-converter_angular/)
 
 ## Description
 
