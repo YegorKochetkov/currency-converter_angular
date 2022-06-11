@@ -1,0 +1,13 @@
+:host {
+  text-align: center;
+  margin: 30px;
+}
+
+.header {
+  &__result {
+    font-size: 30px;
+    color: blue;
+  }
+}
+
+
