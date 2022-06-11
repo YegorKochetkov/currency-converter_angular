@@ -1,0 +1,45 @@
+:host {
+  text-align: center;
+}
+
+.converter {
+  box-sizing: border-box;
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+  }
+
+  &__title {
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+
+  &__amount {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  &__currency {
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  &__result {
+    color: blue;
+  }
+
+  &__swap {
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

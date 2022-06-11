@@ -1,0 +1,58 @@
+<main class="container converter">
+  <h2 class="converter__title">Currency converter</h2>
+  <section class="converter__controls">
+    <input
+      class="converter__amount"
+      type="number"
+      placeholder={{from}}
+      [(ngModel)]="amountFrom"
+      (input)="convertFrom()"
+    >
+
+    <select
+      class="converter__currency"
+      [(ngModel)]="from"
+      (change)="loadRates()"
+    >
+      <option
+        *ngFor="let currency of allCurrencies"
+        [value]="currency"
+      >
+        {{currency}}
+      </option>
+    </select>
+
+    <button class="converter__swap" (click)="swap()">
+      &#8646;
+    </button>
+
+    <input
+      class="converter__amount"
+      type="number"
+      placeholder={{to}}
+      [(ngModel)]="amountTo"
+      (input)="convertTo()"
+    >
+
+    <select
+      class="converter__currency"
+      [(ngModel)]="to"
+      (change)="loadRates()"
+    >
+      <option
+        *ngFor="let currency of allCurrencies"
+        [value]="currency"
+      >
+        {{currency}}
+      </option>
+    </select>
+  </section>
+
+  <p *ngIf="rates">
+    Course {{from}} to {{to}}:
+    <b class="converter__result">
+      {{rates[this.to].toFixed(3)}}
+    </b>
+  </p>
+  <div>{{message}}</div>
+</main>
