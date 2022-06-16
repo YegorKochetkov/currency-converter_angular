@@ -34,7 +34,7 @@
     border: none;
     border-bottom: 1px solid gray;
     background-color: rgb(235, 235, 235);
-    
+
     &:hover {
       cursor: pointer;
     }
@@ -58,6 +58,10 @@
     &:hover {
       cursor: pointer;
       box-shadow: 3px 5px 8px 0px rgba(50, 50, 50, 0.75);
+    }
+
+    &:active {
+      box-shadow: inset 3px 5px 8px 0px rgba(50, 50, 50, 0.75);
     }
   }
 }
