@@ -5,11 +5,14 @@
 .converter {
   box-sizing: border-box;
 
-  &__controls {
+  &__form {
+    font-size: 19px;
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
   }
 
   &__title {
@@ -18,17 +21,23 @@
   }
 
   &__amount {
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
+    padding: 10px;
+
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgb(235, 235, 235);
   }
 
   &__currency {
-    padding: 4px;
-    margin-bottom: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
+    padding: 9px;
+
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgb(235, 235, 235);
+    
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__result {
@@ -37,9 +46,18 @@
 
   &__swap {
     font-size: 20px;
+    color: white;
+    background-color: blue;
+
+    width: max-content;
+    padding: 10px 20px;
+
+    border: none;
+    transition: box-shadow 0.3s;
 
     &:hover {
       cursor: pointer;
+      box-shadow: 3px 5px 8px 0px rgba(50, 50, 50, 0.75);
     }
   }
 }
