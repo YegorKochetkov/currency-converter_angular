@@ -37,7 +37,12 @@ export class ConverterComponent implements OnInit, OnDestroy {
       (response) => {
           this.message = '';
           this.rates = response.rates;
-          this.allCurrencies = Object.keys(response.rates);
+          this.allCurrencies = Object.keys(response.rates)
+            .filter((currency) => currency === "USD"
+                              || currency === "EUR"
+                              || currency === "UAH"
+                              || currency === "GBP"
+            );
           this.convertFrom();
       }
     );
