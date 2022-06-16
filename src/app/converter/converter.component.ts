@@ -43,6 +43,11 @@ export class ConverterComponent implements OnInit, OnDestroy {
                               || currency === "UAH"
                               || currency === "GBP"
             );
+
+          if (this.from === this.to) {
+            this.to = this.to === "USD" ? "UAH" : "USD";
+          }
+
           this.convertFrom();
       }
     );
